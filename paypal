@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>プログラミングサークルのメンバー限定サポート</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+      p{text-align:center;}
+    </style>
+  </head>
+  <body>
+    <p>※個人的に開催しているプログラミングサークルにご参加いただいてる方限定でやっております。</p>
+    <br>
+    <p>WEBアプリ制作が行えるレベル感になるまで、概要の説明や学習方法の提案、不明点のサポートをさせていただきます。</p>
+    <p>Progateでの学習を主軸として進めていただきます。</p>
+    <p>各言語をクリアするごとに、2人で相談して自主課題を決め、制作物を作成してみましょう。</p>
+    <p>Lineでの不明点の相談にも、もちろん対応いたします。</p>
+    <br>
+    <p>(実際に私が半年で就職先を獲得した道のりになります。)</p>
+    <br>
+    <p>※Progateの月額費用は別途自己負担していただきます。</p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+      <input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+      <img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+    </form>
+  </body>
+</html>
