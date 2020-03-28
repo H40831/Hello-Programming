@@ -67,7 +67,7 @@ function slide(el,maxPageNumber){ return {
 	el: el,
 	data: {currentSlide:0},
 	computed: slideComputed(),
-);
+}};
 
 const playground = new Vue( slide('#playground',20) );
 
