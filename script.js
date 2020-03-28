@@ -28,14 +28,18 @@ document.addEventListener('keydown', (event) => {
 		return;
 	}
 });
-
-const playground = new Vue({
-	el: '#playground',
-	data:{
-		currentSlide:0,
-	},
-	computed: {
-		windowShow:function(){return this.currentSlide>=2},
+function page(n){
+	return this.currentSlide===n;
+}
+function slideComputed(maxPageNumber){
+	let obj = {
+		windowShow:function(){return this.currentSlide>=2}
+	};
+	for( let i=1; i<=maxPageNumber; i++ ){
+		obj['page'+i] = function(){ return this.currentSlide===i }
+	}
+	return obj;
+	/*
 		page1:function(){return this.currentSlide===1},
 		page2:function(){return this.currentSlide===2},
 		page3:function(){return this.currentSlide===3},
@@ -56,8 +60,18 @@ const playground = new Vue({
 		page18:function(){return this.currentSlide===18},
 		page19:function(){return this.currentSlide===19},
 		page20:function(){return this.currentSlide===20},
+	*/
+}
+
+function slide(el,maxPageNumber){ return {
+	el: el,
+	data:{
+		currentSlide:0,
 	},
-})
+	computed: slideComputed(),
+});
+
+const playground = new Vue( slide('#playground',20) );
 
 const sizeAdjust = new Vue({
 	el: '#sizeAdjust',
