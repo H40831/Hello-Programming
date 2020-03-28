@@ -36,7 +36,7 @@ function slideComputed(maxPageNumber){
 		windowShow:function(){return this.currentSlide>=2}
 	};
 	for( let i=1; i<=maxPageNumber; i++ ){
-		obj['page'+i] = function(){ return this.currentSlide===i }
+		obj['page'+i] = function(){ return page(i) }
 	}
 	return obj;
 	/*
