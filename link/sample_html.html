@@ -1,0 +1,48 @@
+<html><head><meta name="viewport" content="width=device-width,initial-scale=1.5">
+<style>
+input,button{border:1px solid;}
+</style>
+</head>
+<body>
+    <h2>TODO LIST</h2>
+    <main>
+        <input>
+        <button id="add" type="button">+</button>
+    </main>
+    <ul>
+        <li>予定A<button class="del" type="button">×</button></li>
+        <li>予定B<button class="del" type="button">×</button></li>
+        <li>予定C<button class="del" type="button">×</button></li>
+    </ul>
+    <footer>
+        <button type="button">MENU</button>
+        <nav><ul>
+            <li>トップページ</li>
+            <li>アカウント</li>
+            <li>設定</li>
+        </ul></nav></footer>
+<script>
+add.onclick=()=>{
+    let li = document.createElement('li');
+    let input = document.getElementsByTagName('input')[0];
+    li.innerHTML = input.value+'<button type="button">×</button>'
+    document.getElementsByTagName('ul')[0].append( li );
+    input.value = '';
+}
+let count = 2;
+let dele = document.getElementsByClassName('del');
+dele[1].onclick=()=>{
+    del();
+}
+dele[2].onclick=()=>{
+    del();
+}
+let li = document.getElementsByTagName('li');
+function del(){
+    if(count==2){li[1].style.display = 'none';}
+    if(count==1){li[2].style.display = 'none';}
+    count--;
+    
+}
+</script>
+</body></html>
