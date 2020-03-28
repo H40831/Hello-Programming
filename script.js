@@ -66,14 +66,12 @@ function slideComputed(maxPageNumber){
 function slide(el,maxPageNumber){ return {
 	el: el,
 	data: {currentSlide:0},
-	computed: slideComputed(),
+	computed: slideComputed(maxPageNumber),
 }};
 
 const playground = new Vue( slide('#playground',20) );
 
 const sizeAdjust = new Vue({
 	el: '#sizeAdjust',
-	data:{
-		zoom:1
-	}
+	data:{zoom:1},
 })
