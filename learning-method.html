@@ -3,461 +3,506 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.0/dist/vue.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
-<body>	
-	<div id="playground">
-		<div class="title" :class="{page1:page1}"><div class="subTitle">何歳からでも遅くない！</div><br><div class="mainTitle">ゼロから始めるIT入門道（現代版）</div></div>
-		<div class="window" :class="{windowShow:windowShow}"></div>
-		<section :class="{page2:page2}">
-			<h1>概要</h1>
-			<article>
-				プログラミングの教育を受けて来なかった者が、就職前にITスキルを身に付けていくための学習方法について、<br>
-				最近の情報を調べてまとめました。<br><br>
-				似た境遇の人と接する機会ができたとき、背景の理解や、教育の方針決めに活かしていただければ幸いです。<br>
-				教える側としてお小遣い稼ぎしたい時の参考にもしていただけるかと思います。<br>
-			</article>
-		</section>
+<body id="learning-method">
+	<main class="swiper-container">
+		<article class="swiper-wrapper">
+			<section class="swiper-slide text-only">
+				<h1>
+					Hello Programing!<br>
+					ゼロからはじめるプログラミング学習
+				</h1>
+				<p>
+					プログラミング未経験の方が、<br>
+					プログラミングスキルを身に付けていくためには、どのような方法があるでしょうか？<br>
+					<br>
+					現代的な学習方法をまとめましたので、<br>
+					ご自身にぴったり合った方法で、学習を始めましょう！<br>
+				</p>
+			</section>
 
-		<section :class="{page3:page3}">
-			<h1>自己紹介<small> （ IT入門前のスキル感 ）</small></h1>
-			<article>
-				<strong>PCデビュー</strong><br>
-				・はじめてPCに触れたのは、小学校低学年。（周りより早い方でした。）<br>
-				・デビューOSは WindowsXP。<br>
-				・おもしろフラッシュ倉庫、RPGツクール2000、HTML、MMORPGなどで遊ぶ純粋無垢な子供時代。<br><br>
+			<section class="swiper-slide text-only">
+				<h2>サークル主催者の紹介</h2>
+				<p>
+					2018年12月頃、<br>
+					サークル主催者はプログラミング学習をはじめました。<br>
+					<br>
+					当初は、一切プログラミングに触れたこともありませんでしたが、<br>
+					偶然、プログラミングを教えてくれる友人と出会い、それをきっかけに、学習をはじめました。<br>
+					<br>
+					2019年7月頃、<br>
+					ある程度のスキルを身につけた主催者は、エンジニアとして転職しました。<br>
+					<br>
+					楽しんで習得を続ければ、同じように短期間で、十分なスキルを身につけることができます。<br>
+					主催者が相談にのりますので、是非一緒に楽しく学習をはじめてみましょう！
+				</p>
+			</section>
 
-				<strong>高校卒業後</strong><br>
-				・アパレル専門学校への入学を機に、メインOSをMac OSXへ変更。<br>
-				　以降、プライベートのメインOSはMac OSXになる。<br>
-				　（サブ機として、WindowのミニPCや、タブレットPCも所持してます。）<br>
-				・専門学生時代の得意分野は、Photoshop、Illustrator、AfterEffects、アパレルCADなど。<br><br>
-
-				<strong>就職後</strong><br>
-				・卒業後に就職したアパレルメーカーでもPCを使う仕事を多く任されていたが、コーディング関連知識は、ほぼ無し。<br>
-				　（興味はあったが、学ぶ機会がなかった。）<br>
-				・友人の勉強会への参加をきっかけに、本格的に触れ始める。<br>
-			</article>
-		</section>
-
-		<section id="page4" :class="{page4:page4}">
-			<h1>学習方法</h1>
-			<article :class="{page4:page4}">
-				<div class="hideRight"><img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/School ©Wokandapix from Pixabay.jpg"><p class="copyRight">©Wokandapix from Pixabay</p><strong>1. 高額プログラミングスクール</strong></div>
-				<div class="hideRight"><img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/Company ©janeb13 from Pixabay.jpg"><p class="copyRight">©janeb13 from Pixabay</p><strong>2. 就職<br><small>（未経験歓迎・研修制度充実企業）</small></strong></div>
-				<div class="hideRight"><img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/WEB Service ©StockSnap from Pixabay.jpg"><p class="copyRight">©StockSnap from Pixabay</p><strong>3. WEB学習サービス</strong></div>
-				<div class="hideRight"><img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/Community ©StockSnap from Pixabay.jpg"><p class="copyRight">©StockSnap from Pixabay</p><strong>4. コミュニティ</strong></div>
-
-				<div class="hideRight"><img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/Mentor ©Nicholas Jackson from Pixabay.jpg"><p class="copyRight">©Nicholas Jackson from Pixabay</p><strong>5. メンター</strong></div>
-				<div class="hideRight"><img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/Blog ©rawpixel from Pixabay.jpg"><p class="copyRight">©rawpixel from Pixabay</p><strong>6. ブログ・まとめサイト</strong></div>
-			</article>
-		</section>
-
-		<section id="page5" :class="{page5:page5,page6:page6,page7:page7}">
-			<h1>1. 高額プログラミングスクール</h1>
-			<div class="titleImg"><img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/School ©Wokandapix from Pixabay.jpg"><p class="copyRight">©Wokandapix from Pixabay</p></div>
-			<article>
-				<strong>特徴</strong><br>
-				安心感 ･ 探しやすさ ･ 費用の高さ。<br>
-				<strong>備考</strong><br>
-				就職の斡旋まで行うスクールが多い。<br><br>
-			</article>
-
-			<article class="item1">
-				<div class="items">
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/高額スクール/code camp.png">
-					<p><strong>CodeCamp</strong></p>
-					<p><small>
-						マスターコース<br>
-						2ヶ月　¥148,000<br>
-						プレミアムコース<br>
-						2ヶ月　¥248,000<br>
-						プレミアムプラスコース<br>
-						2ヶ月　¥398,000
-					</small></p>	
+			<section class="swiper-slide">
+				<h2 class="left">学習方法</h2>
+				<div class="right">
+					プログラミングの学習方法にはどんなものがあるでしょうか？
+					主となる６つの方法がこちらになります。
 				</div>
-				<div class="items">
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/高額スクール/potepan camp.png">
-					<p><strong>POTEPAN CAMP</strong></p>
-					<p><small>
-						オープンコース<br>
-						2ヶ月 ¥100,000<br>
-						キャリアコース<br>
-						3ヶ月 ¥250,000<br>
-						ビギナーコース<br>
-				        4ヶ月 ¥300,000<br>
-					</small></p>	
-				</div>
-			</article>
+				<div class="bottom">
+					<div class="hideRight">
+						<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/School ©Wokandapix from Pixabay.jpg">
+						<p class="copyRight">©Wokandapix from Pixabay</p>
+						<p>1. 高額プログラミングスクール</p>
+					</div>
+					<div class="hideRight">
+						<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/Company ©janeb13 from Pixabay.jpg">
+						<p class="copyRight">©janeb13 from Pixabay</p>
+						<p>2. 就職<br>（未経験歓迎・研修制度充実企業）</p>
+					</div>
+					<div class="hideRight">
+						<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/WEB Service ©StockSnap from Pixabay.jpg">
+						<p class="copyRight">©StockSnap from Pixabay</p>
+						<p>3. WEB学習サービス</p>
+					</div>
+					<div class="hideRight">
+						<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/Community ©StockSnap from Pixabay.jpg">
+						<p class="copyRight">©StockSnap from Pixabay</p>
+						<p>4. コミュニティ</p>
+					</div>
 
-			<article class="item2">
-				<div class="items">
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/高額スクール/samurai.png">
-					<p><strong>侍エンジニア塾</strong></p>
-					<p><small>
-						デビューコース<br>
-						1ヶ月 ¥168,000<br>
-				        フリーランスコース<br>
-				        3ヶ月 ¥438,000<br>
-				        ビジネスコース<br>
-				        6ヶ月 ¥698,000
-					</small></p>	
+					<div class="hideRight">
+						<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/Mentor ©Nicholas Jackson from Pixabay.jpg">
+						<p class="copyRight">©Nicholas Jackson from Pixabay</p>
+						<p>5. メンター</p>
+					</div>
+					<div class="hideRight">
+						<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/Blog ©rawpixel from Pixabay.jpg">
+						<p class="copyRight">©rawpixel from Pixabay</p>
+						<p>6. ブログ・まとめサイト</p>
+					</div>
 				</div>
-				<div class="items">
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/高額スクール/tech camp.png">
-					<p><strong>TECH::CAMP</strong></p>
-					<p><small>
-						TECH::CAMP<br>
-						1ヶ月 ¥14,800 + 入会費 ¥148,000<br>
-						TECH::EXPERT (夜間・休日スタイル)<br>
-						6ヶ月 ¥798,000<br>
-						TECH::EXPERT (短期集中スタイル)<br>
-						10週間 ¥598,000
-					</small></p>	
-				</div>
-				<div class="items">
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/高額スクール/webkatsu.png">
-					<p><strong>ウェブカツ</strong></p>
-					<p><small>
-						アスリート部員<br>
-						1ヶ月 ¥43,600 + 入会費 ¥180,000<br>
-						アスリート部員 (完全月額制)<br>
-						1ヶ月 ¥70,600<br>
-						特待生部員<br>
-						6ヶ月 ¥564,000
-					</small></p>	
-				</div>
-			</article>
-		</section>
+			</section>
 
-		<section :class="{page8:page8}">
-			<h1>2. 就職 <small>（未経験歓迎・研修制度充実企業）</small></h1>
-			<div class="titleImg"><img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/Company ©janeb13 from Pixabay.jpg"><p class="copyRight">©janeb13 from Pixabay</p></div>
-			<article>
-				<strong>特徴</strong><br>
-				仕事のためのスキルが確実に身につく。<br>
-				費用がかからない。<br><br>
-				<strong>備考</strong><br>
-				求人の数は少なくないが、かなり薄給。<br>
-				家電量販店や事務仕事などへ派遣されながら、業務時間外で企業が用意したカリキュラムをこなすスタイルが主流。<br>
-				集中学習コースなど用意してある企業もある（無給）。<br><br>
-				<strong>印象</strong><br>
-				ハイリスクなイメージ。<br>
-				新卒のタイミングなど、支出の少ない状況からの就職であれば、選択肢に入るかも。
-			</article>
-		</section>
-
-		<section id="page9" :class="{page9:page9,page10:page10,page11:page11}">
-			<h1>3. WEB学習サービス</h1>
-			<div class="titleImg"><img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/WEB Service ©StockSnap from Pixabay.jpg"><p class="copyRight">©StockSnap from Pixabay</p></div>
-			<article>
-				<strong>特徴</strong><br>
-				コストパフォーマンスが良い。　気軽にはじめられる。　各社、個性的な学習スタイル。<br>
-				<strong>備考</strong><br>
-				基本となる前提知識や、環境構築等について解説されていない場合もある。<br>
-				基本的に一人での学習になるため、自身の相対的なレベル感を把握できない点がデメリット。
-			</article>
-
-			<article class="item1">
-				<div class="items">
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/service/progate.png">
+			<section class="swiper-slide">
+				<div class="text">
+					<h2>1. 高額プログラミングスクール</h2>
+					<div class="titleImg"><img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/School ©Wokandapix from Pixabay.jpg"><p class="copyRight">©Wokandapix from Pixabay</p></div>
 					<p>
-						<strong>Progate</strong><br>
-						<small>月額 ¥980<br>
-						無料範囲あり</small>
+						<strong>特徴</strong><br>
+						安心感 ･ 探しやすさ ･ 費用の高さ。<br>
+						<strong>備考</strong><br>
+						就職の斡旋まで行うスクールが多い。<br><br>
 					</p>
-					<p>
-						<strong>特徴</strong><br>
-						スライド講義で説明を受けた後に、<br>
-						実際にコードを書いて学ぶスタイル。<br>
-						入門者向けで、わかりやすさ重視。<br>
-						講義クリアで経験値が溜まりレベルが上がる。
-					</p>	
-				</div>
-				<div class="items">
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/service/dot install.png">
-					<p>
-						<strong>ドットインストール</strong><br>
-						<small>月額 ¥980<br>
-						無料範囲あり</small></p>
-					<p>
-						<strong>特徴</strong><br>
-						3分動画学習サービス。<br>
-						PC画面のみのシンプルな動画が多い。<br>
-						初心者向けを謳っており、利用者数が多い。<br>
-						音声の文字起こし機能、<br>
-						ソースコード閲覧機能などもある。
-					</p>	
-				</div>
-				<div class="items">
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/service/n yobikou.png">
-					<p>
-						<strong>N予備校</strong><br>
-						<small>クレジットカード決済 月額 ¥1,000<br>
-						iTunes Store決済 月額 ¥1,300<br>
-						無料範囲あり</small></p>
-					<p>
-						<strong>特徴</strong><br>
-						テキストに沿って学ぶスタイル。<br>
-						他サービスと比べ、学習内容が体系的。<br>
-						内容、UIともに、気軽さよりも堅実さ重視。<br>
-						手堅く学びたい人向き。
-					</p>	
-				</div>
-			</article>
 
-			<article class="item2">
-				<div class="items">
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/service/schoo.png">
-					<p>
-						<strong>Schoo</strong><br>
-						<small>WEB登録 月額 ¥980　アプリ登録 月額 ¥1,080<br>
-						プレミアムプラス学生 ¥1,980　1年契約で2ヶ月無料</small></p>
-					<p>
-						<strong>特徴</strong><br>
-						講義動画で学ぶスタイル。<br>
-						ドットインストールと違い、<br>
-						こちらは実際の講義のような視点の動画。<br>
-				        講義の質は、講師の質にも左右される。
-					</p>	
-				</div>
-				<div class="items">
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/service/udemy.png">
-					<p>
-						<strong>Udemy</strong><br>
-						<small>講義ごと ¥2,400 ~ ¥24,000</small></p>
-					<p>
-						<strong>特徴</strong><br>
-						買い切り方式のサービス。<br>
-				        プロが作成した講義（資料）を購入できる。<br>
-				        セールで安くなるタイミングが狙い目。
-					</p>	
-				</div>
-			</article>
-		</section>
-
-		<section id="page12" :class="{page12:page12,page13:page13,page14:page14,page15:page15}">
-			<h1>4. コミュニティ</h1>
-			<div class="titleImg"><img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/Community ©StockSnap from Pixabay.jpg"><p class="copyRight">©StockSnap from Pixabay</p></div>
-			<article class="item3">
-				<p class="logo">
-					<strong> - SNS - </strong><br>
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/twitter.png">
-				</p>
-				<p class="logo">
-					<strong> - Q&A - </strong><br>
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/teratail.png"><br>
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/stack-overflow.png">
-				</p>
-				<p class="logo">
-					<strong> - 情報共有 - </strong><br>
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/qiita.png">
-				</p>
-				<p class="logo">
-					<strong> - 勉強会 - </strong><br>
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/connpass.png">
-				</p>
-			</article>
-			<div class="item4">
-				<p class="logo">
-					<strong> - SNS - </strong><br>
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/twitter.png">
-				</p>
-				<div class="twitterInfo">
-					<p class="hashTag">
-						<strong>ハッシュタグ</strong><br>
-						<small>
-							　<strong>#駆け出しエンジニアと繋がりたい</strong><br>
-							　　プログラミング学習をはじめた人が、Twitterに専用アカウントを作り、このハッシュタグを付けてコミュニティに参加している。<br>
-							　　意識が高い雰囲気の方が多い。<br>
-
-							　<strong>#100DaysOfCode</strong><br>
-							　　100日の間、毎日5分でも良いから学習時間を作ろうという試み。公式サイトがある。<br>
-							　　経過日数、当日の学習内容や学習時間、合計の学習時間などを記録して呟く。<br>
-
-							　<strong>#ウェブカツ</strong><br>
-							　　ウェブカツの学生は、このハッシュタグを付けて呟いている。　#100DaysOfCodeの実施を推奨している様子。<br>
-							　　#100DaysOfCodeがついてるツイートにはこのハッシュタグも付いてる事が多い。
-							　
-						</small>
+					<p class="item1">
+						<div class="items">
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/高額スクール/code camp.png">
+							<p><strong>CodeCamp</strong></p>
+							<p><small>
+								マスターコース<br>
+								2ヶ月  ¥148,000<br>
+								プレミアムコース<br>
+								2ヶ月  ¥248,000<br>
+								プレミアムプラスコース<br>
+								2ヶ月  ¥398,000
+							</small></p>	
+						</div>
+						<div class="items">
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/高額スクール/potepan camp.png">
+							<p><strong>POTEPAN CAMP</strong></p>
+							<p><small>
+								オープンコース<br>
+								2ヶ月 ¥100,000<br>
+								キャリアコース<br>
+								3ヶ月 ¥250,000<br>
+								ビギナーコース<br>
+						        4ヶ月 ¥300,000<br>
+							</small></p>	
+						</div>
 					</p>
-					<p class="influencer">
-						<strong>インフルエンサー</strong><br>
-						<small>
-							　<strong>@kazutaka_dev</strong><br>
-							　<strong>@showheyohtaki</strong><br>
-							　<strong>@kazukichi3110</strong>　など<br>
-							駆け出しエンジニアがこぞってフォローしている。<br>
-						    リプライへの返信率が高く、有益な情報を沢山呟いている。<br>
-						    駆け出しエンジニアから貰ったリプライをRTして応援したりしている。<br>
-						</small>
+
+					<p class="item2">
+						<div class="items">
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/高額スクール/samurai.png">
+							<p><strong>侍エンジニア塾</strong></p>
+							<p><small>
+								デビューコース<br>
+								1ヶ月 ¥168,000<br>
+						        フリーランスコース<br>
+						        3ヶ月 ¥438,000<br>
+						        ビジネスコース<br>
+						        6ヶ月 ¥698,000
+							</small></p>	
+						</div>
+						<div class="items">
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/高額スクール/tech camp.png">
+							<p><strong>TECH::CAMP</strong></p>
+							<p><small>
+								TECH::CAMP<br>
+								1ヶ月 ¥14,800 + 入会費 ¥148,000<br>
+								TECH::EXPERT (夜間・休日スタイル)<br>
+								6ヶ月 ¥798,000<br>
+								TECH::EXPERT (短期集中スタイル)<br>
+								10週間 ¥598,000
+							</small></p>	
+						</div>
+						<div class="items">
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/高額スクール/webkatsu.png">
+							<p><strong>ウェブカツ</strong></p>
+							<p><small>
+								アスリート部員<br>
+								1ヶ月 ¥43,600 + 入会費 ¥180,000<br>
+								アスリート部員 (完全月額制)<br>
+								1ヶ月 ¥70,600<br>
+								特待生部員<br>
+								6ヶ月 ¥564,000
+							</small></p>	
+						</div>
 					</p>
 				</div>
-			</div>
-			<div class="item5">
-				<p class="logo">
-					<strong> - Q&A - </strong><br>
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/teratail.png"><br>
-					<small>
-						　日本のエンジニアが集うQ&Aコミュニティサイト。某Yah○○!知恵袋のエンジニア版。国産サイト。<br>
-					</small>
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/stack-overflow.png"><br>
-					<small>
-						　コンピュータや情報技術、特にプログラミング技術に関するナレッジコミュニティ。海外発のサイト。
-					</small>
-				</p>
-				<p class="logo">
-					<strong> - 情報共有 - </strong><br>
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/qiita.png"><br>
-					<small>
-						　プログラマのための技術情報共有サービス。技術的な事をググると十中八九Qiitaの記事がでてくる。<br>
-				    	　初心者もQiitaアカウントを作って、学習内容をまとめておくと就職に有利などと言われている。
-				    </small>
-				</p>
-				<p class="logo">
-					<strong> - 勉強会 - </strong><br>
-					<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/connpass.png"><br>
-					<small>
-						　エンジニアをつなぐIT勉強会支援プラットフォーム。 <br>
-					    　主にエンジニア向けの勉強会やセミナーなどのイベント開催・参加が無料で行える。
-					</small>
-				</p>
-			</div>
-		</section>
+			</section>
 
-		<section id="page16" :class="{page16:page16}">
-			<h1>5. メンター</h1>
-			<div class="titleImg"><img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/Mentor ©Nicholas Jackson from Pixabay.jpg"><p class="copyRight">©Nicholas Jackson from Pixabay</p></div>
-			<article>
-				<p>
-					<strong>意味</strong><br>
-					<small>メンタリングという育成方法において、指導者のことを指す言葉。<br>
-					育成される側（メンティー）と１対１で対話し、指導や助言をする存在。<br>
-					メンティーから見ると“自分の進みたい方向にいる先駆者”<small>（ https://noda-biz.com/menta/ より抜粋）</small>とも言える。<br>
-					</small>
-				</p>
-				<p>
-					<strong>重要性</strong><br>
-					<small>ITの技術情報は世の中にあふれているが、情報量が多すぎて難解だったり、大前提の知識には触れず省略されている情報も多い。<br>
-					そのため、目標に到達するための知識を全て一人で取捨選択して学習するのは非常に難しいため、疑問点を相談できる相手が居ることがとても重要。<br>
-					メンターを付けるという選択肢があることを知っているかどうかで、学習にかかる時間や費用などのコストが大きく変わってくるだろう。</small>
-				</p>
-				<p>
-					<strong>代表的な関連サービス</strong><br>
-					<div class="item6">
-						<p class="items">
-							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/メンター/menta.png"><br>
+			<section class="swiper-slide">
+				<div class="text">
+					<h2>2. 就職 <small>（未経験歓迎・研修制度充実企業）</small></h2>
+					<div class="titleImg"><img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/Company ©janeb13 from Pixabay.jpg"><p class="copyRight">©janeb13 from Pixabay</p></div>
+					<p>
+						<strong>特徴</strong><br>
+						仕事のためのスキルが確実に身につく。<br>
+						費用がかからない。<br><br>
+						<strong>備考</strong><br>
+						求人の数は少なくないが、かなり薄給。<br>
+						家電量販店や事務仕事などへ派遣されながら、業務時間外で企業が用意したカリキュラムをこなすスタイルが主流。<br>
+						集中学習コースなど用意してある企業もある（無給）。<br><br>
+						<strong>印象</strong><br>
+						ハイリスクなイメージ。<br>
+						新卒のタイミングなど、支出の少ない状況からの就職であれば、選択肢に入るかも。
+					</p>
+				</div>
+			</section>
+
+			<section class="swiper-slide">
+				<div class="text">
+					<h2>3. WEB学習サービス</h2>
+					<div class="titleImg"><img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/WEB Service ©StockSnap from Pixabay.jpg"><p class="copyRight">©StockSnap from Pixabay</p></div>
+					<p>
+						<strong>特徴</strong><br>
+						コストパフォーマンスが良い。  気軽にはじめられる。  各社、個性的な学習スタイル。<br>
+						<strong>備考</strong><br>
+						基本となる前提知識や、環境構築等について解説されていない場合もある。<br>
+						基本的に一人での学習になるため、自身の相対的なレベル感を把握できない点がデメリット。
+					</p>
+
+					<p class="item1">
+						<div class="items">
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/service/progate.png">
+							<p>
+								<strong>Progate</strong><br>
+								<small>月額 ¥980<br>
+								無料範囲あり</small>
+							</p>
+							<p>
+								<strong>特徴</strong><br>
+								スライド講義で説明を受けた後に、<br>
+								実際にコードを書いて学ぶスタイル。<br>
+								入門者向けで、わかりやすさ重視。<br>
+								講義クリアで経験値が溜まりレベルが上がる。
+							</p>	
+						</div>
+						<div class="items">
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/service/dot install.png">
+							<p>
+								<strong>ドットインストール</strong><br>
+								<small>月額 ¥980<br>
+								無料範囲あり</small></p>
+							<p>
+								<strong>特徴</strong><br>
+								3分動画学習サービス。<br>
+								PC画面のみのシンプルな動画が多い。<br>
+								初心者向けを謳っており、利用者数が多い。<br>
+								音声の文字起こし機能、<br>
+								ソースコード閲覧機能などもある。
+							</p>	
+						</div>
+						<div class="items">
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/service/n yobikou.png">
+							<p>
+								<strong>N予備校</strong><br>
+								<small>クレジットカード決済 月額 ¥1,000<br>
+								iTunes Store決済 月額 ¥1,300<br>
+								無料範囲あり</small></p>
+							<p>
+								<strong>特徴</strong><br>
+								テキストに沿って学ぶスタイル。<br>
+								他サービスと比べ、学習内容が体系的。<br>
+								内容、UIともに、気軽さよりも堅実さ重視。<br>
+								手堅く学びたい人向き。
+							</p>	
+						</div>
+					</p>
+
+					<p class="item2">
+						<div class="items">
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/service/schoo.png">
+							<p>
+								<strong>Schoo</strong><br>
+								<small>WEB登録 月額 ¥980  アプリ登録 月額 ¥1,080<br>
+								プレミアムプラス学生 ¥1,980  1年契約で2ヶ月無料</small></p>
+							<p>
+								<strong>特徴</strong><br>
+								講義動画で学ぶスタイル。<br>
+								ドットインストールと違い、<br>
+								こちらは実際の講義のような視点の動画。<br>
+						        講義の質は、講師の質にも左右される。
+							</p>	
+						</div>
+						<div class="items">
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/service/udemy.png">
+							<p>
+								<strong>Udemy</strong><br>
+								<small>講義ごと ¥2,400 ~ ¥24,000</small></p>
+							<p>
+								<strong>特徴</strong><br>
+								買い切り方式のサービス。<br>
+						        プロが作成した講義（資料）を購入できる。<br>
+						        セールで安くなるタイミングが狙い目。
+							</p>	
+						</div>
+					</p>
+				</div>
+			</section>
+
+			<section class="swiper-slide">
+				<div class="text">
+					<h2>4. コミュニティ</h2>
+					<div class="titleImg"><img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/Community ©StockSnap from Pixabay.jpg"><p class="copyRight">©StockSnap from Pixabay</p></div>
+					<p class="item3">
+						<p class="logo">
+							<strong> - SNS - </strong><br>
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/twitter.png">
+						</p>
+						<p class="logo">
+							<strong> - Q&A - </strong><br>
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/teratail.png"><br>
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/stack-overflow.png">
+						</p>
+						<p class="logo">
+							<strong> - 情報共有 - </strong><br>
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/qiita.png">
+						</p>
+						<p class="logo">
+							<strong> - 勉強会 - </strong><br>
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/connpass.png">
+						</p>
+					</p>
+					<div class="item4">
+						<p class="logo">
+							<strong> - SNS - </strong><br>
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/twitter.png">
+						</p>
+						<div class="twitterInfo">
+							<p class="hashTag">
+								<strong>ハッシュタグ</strong><br>
+								<small>
+									  <strong>#駆け出しエンジニアと繋がりたい</strong><br>
+									    プログラミング学習をはじめた人が、Twitterに専用アカウントを作り、このハッシュタグを付けてコミュニティに参加している。<br>
+									    意識が高い雰囲気の方が多い。<br>
+
+									  <strong>#100DaysOfCode</strong><br>
+									    100日の間、毎日5分でも良いから学習時間を作ろうという試み。公式サイトがある。<br>
+									    経過日数、当日の学習内容や学習時間、合計の学習時間などを記録して呟く。<br>
+
+									  <strong>#ウェブカツ</strong><br>
+									    ウェブカツの学生は、このハッシュタグを付けて呟いている。  #100DaysOfCodeの実施を推奨している様子。<br>
+									    #100DaysOfCodeがついてるツイートにはこのハッシュタグも付いてる事が多い。
+									  
+								</small>
+							</p>
+							<p class="influencer">
+								<strong>インフルエンサー</strong><br>
+								<small>
+									  <strong>@kazutaka_dev</strong><br>
+									  <strong>@showheyohtaki</strong><br>
+									  <strong>@kazukichi3110</strong>  など<br>
+									駆け出しエンジニアがこぞってフォローしている。<br>
+								    リプライへの返信率が高く、有益な情報を沢山呟いている。<br>
+								    駆け出しエンジニアから貰ったリプライをRTして応援したりしている。<br>
+								</small>
+							</p>
+						</div>
+					</div>
+					<div class="item5">
+						<p class="logo">
+							<strong> - Q&A - </strong><br>
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/teratail.png"><br>
 							<small>
-								<strong>MENTA</strong><br>
-								<small>相場　単発 ¥1,000 ~ 月額 ¥15,000+α</small><br>
-								メンターマッチングサービス。<br>
-								大体のメンターが単発、月額などで複数のコースを用意している。<br>
-								IT関連のメンターが大半だが、起業方法、身体を柔らかくする方法、<br>
-								あなたのイラスト褒めます、などのメンターもいる。
+								  日本のエンジニアが集うQ&Aコミュニティサイト。某Yah○○!知恵袋のエンジニア版。国産サイト。<br>
+							</small>
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/stack-overflow.png"><br>
+							<small>
+								  コンピュータや情報技術、特にプログラミング技術に関するナレッジコミュニティ。海外発のサイト。
 							</small>
 						</p>
-						<p class="items">
-							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/メンター/techme.png"><br>
+						<p class="logo">
+							<strong> - 情報共有 - </strong><br>
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/qiita.png"><br>
 							<small>
-								<strong>TechMe</strong><br>
-								<small>相場　30分 ¥1,500 ~ ¥6,250</small><br>
-								30分単位で現役のエンジニアに個別相談ができるプラットフォーム。<br>
-								MENTAと違い単発の相談がメイン。<br>
-								プログラミング初学者だけでなく、<br>
-								IT担当のいない or 少ない会社もターゲットにしている。
+								  プログラマのための技術情報共有サービス。技術的な事をググると十中八九Qiitaの記事がでてくる。<br>
+						    	  初心者もQiitaアカウントを作って、学習内容をまとめておくと就職に有利などと言われている。
+						    </small>
+						</p>
+						<p class="logo">
+							<strong> - 勉強会 - </strong><br>
+							<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/コミュニティ/connpass.png"><br>
+							<small>
+								  エンジニアをつなぐIT勉強会支援プラットフォーム。 <br>
+							      主にエンジニア向けの勉強会やセミナーなどのイベント開催・参加が無料で行える。
 							</small>
 						</p>
 					</div>
-
-				</p>	
-			</article>
-		</section>
-
-		<section id="page17" :class="{page17:page17}">
-			<h1>6. ブログ・参考サイト</h1>
-			<div class="titleImg"><img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/Blog ©rawpixel from Pixabay.jpg"><p class="copyRight">©rawpixel from Pixabay</p></div>
-			<p><small>これだけではどうにもならないが、これが無くてはどうにもならない。<br>
-			なくてはならない存在。いつもお世話になっております。</small></p>
-			<article>
-				<p class="items"><small><strong>代表的な参考サイト</strong></small></p>	
-				<div class="item7">
-					<div class="items">
-						<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/参考サイト/engineer.png"><br>
-							<p>
-								<strong>エンジニアの入り口</strong><br>
-								<small>CSS/Java/Linux/PHP/<br>
-								Ruby/JavaScript など</small>
-							</p>
-					</div>
-					<div class="items">
-						<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/参考サイト/samurai.png"><br>
-							<p>
-								<strong>侍エンジニア塾ブログ</strong><br>
-								<small>Ruby/Swift/Java/Python/<br>
-								JavaScript など</small>
-							</p>
-					</div>
-					<div class="items">
-						<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/参考サイト/saruwaka.png"><br>
-							<p>
-								<strong>サルワカ</strong><br>
-								<small>CSS/WEBデザイン/<br>
-								WordPress など</small>
-							</p>
-					</div>
 				</div>
-				<p class="items"><small><strong>個人的お気に入りサイト</strong></small></p>	
-					<div class="item8">
-					<div class="items">
-						<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/参考サイト/selector_cheet.png"><br>
-							<p>
-								<strong>webliker</strong><br>
-								<small>CSSセレクタのチートシート など</small>
-							</p>
-					</div>
-					<div class="items">
-						<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/参考サイト/flex_cheet.png"><br>
-							<p>
-								<strong>WEBクリエイターボックス</strong><br>
-								<small>Flexboxのチートシート など</small>
-							</p>
-					</div>
-					<div class="items">
-						<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/参考サイト/linuc.png"><br>
-							<p>
-								<strong>LinuC</strong><br>
-								<small>Linux標準教科書 など</small>
-							</p>
-					</div>
-					<div class="items">
-						<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/参考サイト/it_staffing.png"><br>
-							<p>
-								<strong>IT STAFFING
-								<br>エンジニアスタイル</strong><br>
-								<small>スキルアップ情報 など</small>
-							</p>
-					</div>
-				</div>
-			</article>
-		</section>
+			</section>
 
-		<section :class="{page18:page18,page19:page19}">
-			<h1>感想</h1>
-			<p>以上です。<br><br>
-			紹介したコンテンツはどれも素晴らしいものですが、<br>
-			Twitterの駆け出しエンジニアのアカウントなど眺めていると、<br>
-			1つのコンテンツに頼り切って挫折してしまう人が多い印象を受けました。<br>
-			2~3個くらい、組み合わせて学習しないと厳しいと思いました。</p>
-			プログラミングスクールは高いと思いました。<br>
-			いつか僕も、教える側の観点からここにまとめた知識を活かせるようになるため、<br>これからもっと経験と学習を積み重ねていきたいです。<br>
-			まずは、次回の技術MTGでお披露目できる技術を身につけるために頑張ります。
-		</section>
-		<div class="endModal" :class={page19:page19}>
-			<p>おわり ( ᐛ👐)パァ</p>
-		</div>
-	</div>
-	<style id="sizeAdjust" type="text/css">section{zoom:{{zoom}};}</style>
+			<section class="swiper-slide">
+				<div class="text">
+					<h2>5. メンター</h2>
+					<div class="titleImg"><img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/Mentor ©Nicholas Jackson from Pixabay.jpg"><p class="copyRight">©Nicholas Jackson from Pixabay</p></div>
+					<p>
+						<p>
+							<strong>意味</strong><br>
+							<small>メンタリングという育成方法において、指導者のことを指す言葉。<br>
+							育成される側（メンティー）と１対１で対話し、指導や助言をする存在。<br>
+							メンティーから見ると“自分の進みたい方向にいる先駆者”<small>（ https://noda-biz.com/menta/ より抜粋）</small>とも言える。<br>
+							</small>
+						</p>
+						<p>
+							<strong>重要性</strong><br>
+							<small>ITの技術情報は世の中にあふれているが、情報量が多すぎて難解だったり、大前提の知識には触れず省略されている情報も多い。<br>
+							そのため、目標に到達するための知識を全て一人で取捨選択して学習するのは非常に難しいため、疑問点を相談できる相手が居ることがとても重要。<br>
+							メンターを付けるという選択肢があることを知っているかどうかで、学習にかかる時間や費用などのコストが大きく変わってくるだろう。</small>
+						</p>
+						<p>
+							<strong>代表的な関連サービス</strong><br>
+							<div class="item6">
+								<p class="items">
+									<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/メンター/menta.png"><br>
+									<small>
+										<strong>MENTA</strong><br>
+										<small>相場  単発 ¥1,000 ~ 月額 ¥15,000+α</small><br>
+										メンターマッチングサービス。<br>
+										大体のメンターが単発、月額などで複数のコースを用意している。<br>
+										IT関連のメンターが大半だが、起業方法、身体を柔らかくする方法、<br>
+										あなたのイラスト褒めます、などのメンターもいる。
+									</small>
+								</p>
+								<p class="items">
+									<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/メンター/techme.png"><br>
+									<small>
+										<strong>TechMe</strong><br>
+										<small>相場  30分 ¥1,500 ~ ¥6,250</small><br>
+										30分単位で現役のエンジニアに個別相談ができるプラットフォーム。<br>
+										MENTAと違い単発の相談がメイン。<br>
+										プログラミング初学者だけでなく、<br>
+										IT担当のいない or 少ない会社もターゲットにしている。
+									</small>
+								</p>
+							</div>
+
+						</p>	
+					</p>
+				</div>
+			</section>
+
+			<section class="swiper-slide">
+				<div class="text">
+					<h2>6. ブログ・参考サイト</h2>
+					<div class="titleImg"><img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/種類/Blog ©rawpixel from Pixabay.jpg"><p class="copyRight">©rawpixel from Pixabay</p></div>
+					<p><small>これだけではどうにもならないが、これが無くてはどうにもならない。<br>
+					なくてはならない存在。いつもお世話になっております。</small></p>
+					<p>
+						<p class="items"><small><strong>代表的な参考サイト</strong></small></p>	
+						<div class="item7">
+							<div class="items">
+								<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/参考サイト/engineer.png"><br>
+									<p>
+										<strong>エンジニアの入り口</strong><br>
+										<small>CSS/Java/Linux/PHP/<br>
+										Ruby/JavaScript など</small>
+									</p>
+							</div>
+							<div class="items">
+								<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/参考サイト/samurai.png"><br>
+									<p>
+										<strong>侍エンジニア塾ブログ</strong><br>
+										<small>Ruby/Swift/Java/Python/<br>
+										JavaScript など</small>
+									</p>
+							</div>
+							<div class="items">
+								<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/参考サイト/saruwaka.png"><br>
+									<p>
+										<strong>サルワカ</strong><br>
+										<small>CSS/WEBデザイン/<br>
+										WordPress など</small>
+									</p>
+							</div>
+						</div>
+						<p class="items"><small><strong>個人的お気に入りサイト</strong></small></p>	
+							<div class="item8">
+							<div class="items">
+								<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/参考サイト/selector_cheet.png"><br>
+									<p>
+										<strong>webliker</strong><br>
+										<small>CSSセレクタのチートシート など</small>
+									</p>
+							</div>
+							<div class="items">
+								<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/参考サイト/flex_cheet.png"><br>
+									<p>
+										<strong>WEBクリエイターボックス</strong><br>
+										<small>Flexboxのチートシート など</small>
+									</p>
+							</div>
+							<div class="items">
+								<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/参考サイト/linuc.png"><br>
+									<p>
+										<strong>LinuC</strong><br>
+										<small>Linux標準教科書 など</small>
+									</p>
+							</div>
+							<div class="items">
+								<img src="https://h40831.github.io/vue_presentation_engineers_getting_started/photo/参考サイト/it_staffing.png"><br>
+									<p>
+										<strong>IT STAFFING
+										<br>エンジニアスタイル</strong><br>
+										<small>スキルアップ情報 など</small>
+									</p>
+							</div>
+						</div>
+					</p>
+				</div>
+			</section>
+
+			<section class="swiper-slide">
+				<div class="text">
+					<h2>感想</h2>
+					<p>以上です。<br><br>
+						紹介したコンテンツはどれも素晴らしいものですが、<br>
+						Twitterの駆け出しエンジニアのアカウントなど眺めていると、<br>
+						1つのコンテンツに頼り切って挫折してしまう人が多い印象を受けました。<br>
+						2~3個くらい、組み合わせて学習しないと厳しいと思いました。</p>
+						プログラミングスクールは高いと思いました。<br>
+						いつか僕も、教える側の観点からここにまとめた知識を活かせるようになるため、<br>これからもっと経験と学習を積み重ねていきたいです。<br>
+						まずは、次回の技術MTGでお披露目できる技術を身につけるために頑張ります。
+					</p>
+				</div>
+			</section>
+		</article>
+		<nav>
+			<div class="prev"></div>
+			<div class="next"></div>
+		</nav>
+	</main>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
 	<script src='script.js'></script>
 </body>
 </html>
