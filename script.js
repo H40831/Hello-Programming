@@ -7,6 +7,10 @@ var mySwiper = new Swiper('.swiper-container', {
 	},
 });
 
+[...document.getElementsByClassName('swiper-slide')].forEach( (element,index)=> {
+	element.setAttribute("id",'page'+(index));
+});
+
 /*
 document.addEventListener('keydown', (event) => {
 	let key = event.key;
