@@ -121,6 +121,18 @@ small {
 	font-size: 10px;
 }
 
+#page4 .title small {
+	font-size: .5em;
+}
+#page4 .content {
+	flex-basis: 100%;
+}
+#page4 .content img {
+	width: 40%;
+}
+#page4 .copyRight {
+    padding-right: 30%;
+}
 
 /* navボタン等 */
 nav {
