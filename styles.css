@@ -13,6 +13,12 @@ body {
 	overflow: hidden;
 	font-family: "Quicksand", "M PLUS Rounded 1c", "Hiragino Maru Gothic Pro", "Meiryo UI", Meiryo, "MS PGothic", sans-serif;
 	font-weight: 300;
+	font-size: 1em;
+}
+*:link,
+*:visited {
+	color: inherit;
+	text-decoration: none;
 }
 .swiper-container {
 	background: radial-gradient(
@@ -24,8 +30,8 @@ body {
     width: 96vw;
     height: 95vh;
     box-sizing: border-box;
-    padding-top: 110px;
-    overflow: scroll;
+    padding-top: 5%;
+    overflow: hidden;
 }
 .swiper-wrapper {
 	height: calc(100% - 100px);
@@ -94,7 +100,9 @@ small {
 	flex-basis: 50%;
 }
 .bottom .content {
+	display: block;
 	text-align: center;
+	margin-bottom: 1em;
 }
 
 /*ページ別*/
@@ -111,10 +119,12 @@ small {
 #page3 .top .title {
 	padding-left: 5%;
 }
-#page3 .content {
+#page3 .content,
+#page5 .content {
 	flex-basis: calc(100% / 3);
 }
-#page3 .content img {
+#page3 .content img,
+#page5 .content img {
 	width: 50%;
 }
 #page3 .content .text {
@@ -125,13 +135,93 @@ small {
 	font-size: .5em;
 }
 #page4 .content {
-	flex-basis: 100%;
+	flex-basis: calc(100% / 3);
 }
 #page4 .content img {
-	width: 40%;
+	width: 70%;
 }
 #page4 .copyRight {
-    padding-right: 30%;
+    padding-right: 25%;
+}
+
+#page5 .content p {
+	line-height: 1;
+}
+
+#page6 .content {
+	flex-basis: 20%;
+	font-size: .9em;
+}
+#page6 img {
+	width: 70%;
+	margin: .5em 15% .5em;
+}
+#page6 .content p {
+	margin-bottom: 2em;
+}
+
+#page7 .content {
+	flex-basis: 50%;
+}
+#page7 .content img {
+	width: 70%;
+}
+
+#page8 .content {
+	flex-basis: calc(100% / 4);
+}
+#page8 .content img {
+	width: 70%;
+}
+
+#endModal {
+	transition: opacity .3s;
+	z-index: 1;
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.modalWindow {
+	font-family: "Lato", "Hiragino Maru Gothic Pro", "Meiryo UI", Meiryo, "MS PGothic", sans-serif;
+	position: relative;
+	margin: 0 auto;
+	background: white;
+	border-radius: 5px;
+	color: #808080;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-basis: 70vw;
+    height: 70vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 45px, rgba(0, 0, 0, 0.22) 0px 10px 18px;
+    text-align: center;
+}
+.modalWindow p {
+	margin-bottom: 1.5em;
+}
+button {
+	font-size: 1em;
+	outline: none;
+	border: none;
+	padding: 1em 2em;
+	transition: all 0.2s ease;
+	background-color: #2abc8f;
+	color: white;
+}
+button:hover {
+	background-color: #239b76;
 }
 
 /* navボタン等 */
