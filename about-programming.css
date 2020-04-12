@@ -4,3 +4,24 @@
 #page1 img {
 	width: 65%;
 }
+#page2 .content {
+	flex-basis: calc(100% / 3);
+}
+#page2 .logo {
+	width: 60%;
+}
+#page3 .bottom,
+#page4 .bottom,
+#page5 .bottom {
+	align-items: center;
+}
+#page3 .content,
+#page4 .content,
+#page5 .content {
+	flex-basis: 50%;
+}
+#page3 .logo,
+#page4 .logo,
+#page5 .logo {
+	width: 50%;
+}
