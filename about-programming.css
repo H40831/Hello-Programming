@@ -1,0 +1,6 @@
+#page1 .content {
+	flex-basis: calc(100% / 4);
+}
+#page1 img {
+	width: 65%;
+}
