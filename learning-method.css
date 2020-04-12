@@ -1,0 +1,67 @@
+#page2 .bottom .content{
+	flex-basis: calc(100% / 3);
+}
+#page2 .bottom img {
+	width: 65%;
+}
+#page2 .bottom .copyRight {
+	margin-right: 17.5%;
+}
+
+#page3 .top .title {
+	padding-left: 5%;
+}
+#page3 .content,
+#page5 .content {
+	flex-basis: calc(100% / 3);
+}
+#page3 .content img,
+#page5 .content img {
+	width: 50%;
+}
+#page3 .content .text {
+	font-size: 10px;
+}
+
+#page4 .title small {
+	font-size: .5em;
+}
+#page4 .content {
+	flex-basis: calc(100% / 3);
+}
+#page4 .content img {
+	width: 70%;
+}
+#page4 .copyRight {
+    padding-right: 25%;
+}
+
+#page5 .content p {
+	line-height: 1;
+}
+
+#page6 .content {
+	flex-basis: 20%;
+	font-size: .9em;
+}
+#page6 img {
+	width: 70%;
+	margin: .5em 15% .5em;
+}
+#page6 .content p {
+	margin-bottom: 2em;
+}
+
+#page7 .content {
+	flex-basis: 50%;
+}
+#page7 .content img {
+	width: 70%;
+}
+
+#page8 .content {
+	flex-basis: calc(100% / 4);
+}
+#page8 .content img {
+	width: 70%;
+}
