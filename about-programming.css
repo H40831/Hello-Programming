@@ -71,3 +71,38 @@
 	content: '\02715';
 	color: red;
 }
+
+#page7 img {
+	width: 80%;
+}
+
+#page8 .content {
+	flex-basis: calc(100% / 4);
+	position: relative;
+}
+#page8 img {
+	width: 50%;
+}
+#page8 .arrow {
+	position: absolute;
+	top: 5em;
+	right: -1.5em;
+	padding: 0;
+    box-sizing: border-box;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    border: 12px solid transparent;
+    border-left: 22px solid #3b759e;
+    background: none;
+    outline: none;
+}
+#page8 .content p {
+	margin-bottom: .5em;
+}
+#page8 small {
+	display: block;
+}
+#page8 .line{
+	font-size: 10vw;
+}

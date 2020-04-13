@@ -196,31 +196,134 @@
 				<div class="top">
 					<h2 class="title">サーバーとは (1)</h2>
 					<p class="text">
-						WEBでは、どんな流れでパソコンにWEBページを表示しているでしょうか？<br>
-						実は、メールで相手から画像を送ってもらう時の流れとほとんど同じです。<br>
-						・自分: 相手のメールアドレスに「画像を送ってください」と送信する。<br>
-						・相手: パソコンに入っている画像をメールに添付して返信する。<br>
-						・自分: メールに添付された画像をダブルクリックして開く。<br>
-						というのがメールの流れになりますが、<br>
-						ここでメールアドレスのかわりにURLを使い、<br>
-						添付するファイルがHTML、CSS、JavaScriptのテキストになり、<br>
-						ファイルを開く手間を自動化したものが、WEBサイトです。<br>
-						<small>
-							※ URL … 「http://」 から始まるホームページのアドレスのこと。<br>
-						</small>
+						WEBでは、どんな流れでパソコンにWEBサイトを表示しているでしょうか？<br>
+						私たちがWEBサイトを表示するとき<br>
+						1. URLにアクセスする。<br>
+						2. WEBページを表示する。<br>
+						という流れでパソコンにWEBサイトを表示していますが、<br>
+						これを更に細かい流れに分けると、下図のようになります。<br>
 					</p>
 				</div>
 				<div class="bottom">
 					<div class="content">
-						<img src="https://h40831.github.io/Hello-Programming/image/流れ/server.png">
-					</div>
-					<div class="arrow">-</div>
-					<div class="content">
-						<img src="https://h40831.github.io/Hello-Programming/image/流れ/file.png">
-					</div>
-					<div class="arrow">→</div>
-					<div class="content">
+						<h3 class="title">
+							あなたのPC<br>
+							<small>(ローカルやクライアントなどと呼ぶ)</small>
+						</h3>
 						<img src="https://h40831.github.io/Hello-Programming/image/流れ/pc.png">
+						<div class="arrow"></div>
+						<p class="text">
+							URLを入力したとき、同時に<br>
+							WEBサイトのデータを返送するよう<br>
+							サーバーにリクエストを送ります。
+						</p>
+						<small>
+							「http://◯◯◯.com/index」というアドレスの場合、<br>
+							「http://」が、リクエストしているという合図、<br>
+							「◯◯◯.com」が、リクエストするサーバーのアドレス、<br>
+							「index」が、返送してほしいファイルの名前<br>
+							を表しています。
+						</small>
+					</div>
+					<div class="content">
+						<h3 class="title">サイト運営会社などが所有するPC<br>
+						<small>(サーバーと呼ぶ)</small></h3>
+						<img src="https://h40831.github.io/Hello-Programming/image/流れ/server.png">
+						<div class="arrow"></div>
+						<p class="text">
+							サーバーは、リクエストを受け取り、<br>
+							あなたに送るべきデータを選んで<br>
+							返送します。
+						</p>
+						<small>
+							サーバーが送らなかったファイルは<br>
+							あなたのPCから表示することはできないので、<br>
+							サーバーは個人情報やパスワード、<br>
+							見せたくないファイルなどを守ることができます。
+						</small>
+					</div>
+					<div class="content">
+						<h3 class="title">
+							WEBサイトのデータ
+						</h3>
+						<img src="https://h40831.github.io/Hello-Programming/image/流れ/file.png">
+						<div class="arrow"></div>
+						<p class="text">
+							WEBサイトのデータが、<br>
+							あなたのPCに送信されます。
+						</p>
+						<small>
+							WEBサイトのデータというのは、<br>
+							3つの言語が書かれたテキストファイルや、<br>
+							サイトに表示する画像ファイルなどの事です。
+						</small>
+					</div>
+					<div class="content">
+						<h3 class="title">あなたのPC</h3>
+						<img src="https://h40831.github.io/Hello-Programming/image/流れ/pc.png">
+						<p class="text">
+							あなたのPCが、自動で<br>
+							ブラウザ上にデータを開きます。
+						</p>
+						<small>
+							データを開くというのはつまり、<br>
+							HTMLで決められた構造、CSSで指示されたスタイル、<br>
+							JavaScriptで作られた機能を、<br>
+							言語の指示通りに表示するという事です。
+						</small>
+					</div>
+				</div>
+			</section>
+
+			<section class="swiper-slide">
+				<div class="top">
+					<h2 class="title">サーバーとは (2)</h2>
+					<p class="text">
+						スマホにアプリをインストールするのと同じように、<br>
+						PCに、サーバーとして利用するための機能をインストールすることで、<br>
+						そのPCはサーバーになります。<br>
+						また、その他にも様々な機能を導入することができます。<br>
+						サーバーの代表的な役割が以下の３つになります。
+					</p>
+				</div>
+				<div class="bottom">
+					<div class="content">
+						<h3 class="title">サーバーの主な役割</h3>
+						<img src="https://h40831.github.io/Hello-Programming/image/言語ロゴ/cloud.png">
+						<p class="text">
+							スマホにアプリをインストールするのと同じように<br>
+							PCにサーバーの機能を導入することで、<br>
+							リクエストしてきたユーザーのPCに対して<br>
+							任意のファイルを送ることが出来ます。<br>
+							個人情報やパスワードなど、機能として必要だけど<br>
+							他の人に見せたくないデータは、送らないようにしておくことで<br>
+							守ることができます。
+						</p>
+					</div>
+					<div class="content">
+						<h3 class="title">データの共有</h3>
+						<img src="https://h40831.github.io/Hello-Programming/image/言語ロゴ/share.png">
+						<p class="text">
+							ユーザーが入力･送信したデータをサーバーに保存し<br>
+							保存したデータを他のユーザーに送ることで、<br>
+							サーバーにアクセスしてきた沢山のユーザーと<br>
+							データを共有することができます。<br>
+							オンラインゲームや、掲示板、チャットなどで<br>
+							使われている仕組みです。
+						</p>
+					</div>
+					<div class="content">
+						<h3 class="title">データベース</h3>
+						<img src="https://h40831.github.io/Hello-Programming/image/言語ロゴ/db.png">
+						<p class="text">
+							ユーザーひとりひとりの情報を扱う場合、<br>
+							とても膨大な数の情報を扱うことになりますが、<br>
+							その情報を取り出すのに時間をかけるわけにはいきません。<br>
+							膨大な情報から、特定の条件に合致する情報を素早く取り出すために<br>
+							データーベースという機能があります。<br>
+							通常、ユーザーの個人情報や、パスワードなどの情報は、<br>
+							このデータベースに格納されている事がほとんどです。
+						</p>
 					</div>
 				</div>
 			</section>
@@ -237,7 +340,7 @@
 				
 			</p>
 			<a href="https://menta.work/plan/1225" target="_blank">
-				<button type="button">学習のサポートを申し込む</button>
+				<button type="button">Progateをはじめる</button>
 			</a>
 		</div>
 	</div>
