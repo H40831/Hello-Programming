@@ -106,3 +106,21 @@
 #page8 .line{
 	font-size: 10vw;
 }
+
+#page9 .content {
+	flex-basis: calc(100% / 3);
+}
+#page9 small {
+	display: block;
+	font-size: .85em;
+}
+#page9 img {
+	width: 45%;
+}
+
+#page10 .content {
+	flex-basis: 50%;
+}
+#page10 img {
+	width: 30%;
+}
