@@ -125,5 +125,8 @@
 	flex-basis: calc(100% / 3);
 }
 #page10 img {
-	width: 70%;
+	width: 45%;
+}
+#page10 .x:after {
+	font-size: 20vw;
 }
