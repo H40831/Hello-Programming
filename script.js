@@ -1,3 +1,9 @@
+//idとdata-hashにページ番号を割り振る
+[...document.getElementsByClassName('swiper-slide')].forEach( (element,index)=> {
+	element.setAttribute("id",'page'+(index));
+	element.dataset.hash = (index);
+});
+
 let isEndPage = false;
 document.addEventListener('keydown', (event) => {
 	let key = event.key;
@@ -26,6 +32,7 @@ document.addEventListener('keydown', (event) => {
 var mySwiper = new Swiper('.swiper-container', {
 	keyboard: true,
 	paginationClickable: true,
+	hashNavigation:true,
 	navigation: {
 		nextEl: '.next',
 		prevEl: '.prev',
@@ -37,10 +44,6 @@ mySwiper.on('slideChange',()=>{
 	}else{
 		isEndPage = false;
 	}
-});
-
-[...document.getElementsByClassName('swiper-slide')].forEach( (element,index)=> {
-	element.setAttribute("id",'page'+(index));
 });
 
 fontSize = 1.00;
