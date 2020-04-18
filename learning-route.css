@@ -1,0 +1,66 @@
+.lesson * {
+	box-sizing: border-box;
+	color: #235d8a;
+	font-family: Lato, "Hiragino Maru Gothic Pro", "Meiryo UI", Meiryo, "MS PGothic", sans-serif;
+}
+.lesson.card {
+	margin: 15px 0 10px;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    font-smoothing: antialiased;
+    position: relative;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #fff;
+    display: flex;
+}
+.lesson .thumbnail {
+	text-align: center;
+    border-radius: 3px 0 0 3px;
+    padding: 38px 0;
+    width: calc(26% * .9);
+    background-color: #4ccfc9;
+    flex-shrink: 0;
+}
+.lesson img {
+	max-width: 100%;
+}
+.lesson .image.html-css {
+    background-image: url(https://d2aj9sy12tbpym.cloudfront.net/assets/languages/lessons/html/study-10537e8….svg);
+}
+.lesson .text {
+	margin: 27px 40px 24px;
+}
+.lesson .label {
+	border: 1px solid #51d4e2;
+    color: #51d4e2;
+    padding: 3px 10px;
+    margin-left: -5px;
+    margin-bottom: 6px;
+    border-radius: 20px;
+    font-size: 13px;
+    width: 94px;
+    text-align: center;
+}
+.lesson .title.time {
+	display: flex;
+	align-items: center;
+	border: none;
+}
+.lesson .title {
+	padding-right: 22px;
+    border-right: 1px solid #dcdcdc;
+    font-size: 1.5em;
+}
+.lesson .time {
+	font-size: 0.75em;
+}
+.lesson .clock {
+	width: 14px;
+	margin: 0 5px 0 18px;
+	vertical-align: middle;
+}
+.lesson .detail {
+	margin: 10px 0;
+	height: 48px;
+}
+
