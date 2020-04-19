@@ -4,7 +4,6 @@
 	element.dataset.hash = (index);
 });
 
-let isEndPage = false;
 document.addEventListener('keydown', (event) => {
 	let key = event.key;
 	if(key=='ArrowUp'){
@@ -15,18 +14,6 @@ document.addEventListener('keydown', (event) => {
 		toSmall();
 		//return;
 	}
-
-	if(key=='ArrowRight'){
-		if(isEndPage){
-			openEndModal();
-		}
-	}
-	if(key=='ArrowLeft'){
-		if(isEndPage){
-			closeEndModal();
-		}
-	}
-
 });
 
 var mySwiper = new Swiper('.swiper-container', {
@@ -39,10 +26,10 @@ var mySwiper = new Swiper('.swiper-container', {
 	},
 });
 mySwiper.on('slideChange',()=>{
-	if(mySwiper.realIndex === mySwiper.slides.length-1){
-		isEndPage = true;
+	if(mySwiper.progress === 1){
+		openEndModal();
 	}else{
-		isEndPage = false;
+		closeEndModal();
 	}
 });
 

@@ -213,8 +213,8 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
-.prev,
-.next {
+nav .prev,
+nav .next {
 	padding: 0;
 	box-sizing: border-box;
 	width: 22px;
@@ -225,9 +225,9 @@ nav {
 	background: none;
 	outline: none;
 }
-.prev {
+nav .prev {
 	border-right: 22px solid #3b759e;
 }
-.next {
+nav .next {
 	border-left: 22px solid #3b759e;
 }
