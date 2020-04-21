@@ -1,3 +1,21 @@
+const class_mac = document.getElementsByClassName('mac');
+const class_win = document.getElementsByClassName('win');
+if(window.navigator.userAgent.toLowerCase().indexOf('mac os x')){
+	for(let i=0; i<class_mac.length; i++){
+		class_mac[i].classList.remove('hide');
+	}
+	for(let i=0; i<class_win.length; i++){
+		class_win[i].classList.add('hide');
+	}
+}else{
+	for(let i=0; i<class_mac.length; i++){
+		class_mac[i].classList.add('hide');
+	}
+	for(let i=0; i<class_win.length; i++){
+		class_win[i].classList.remove('hide');
+	}
+}
+
 //idとdata-hashにページ番号を割り振る
 [...document.getElementsByClassName('swiper-slide')].forEach( (element,index)=> {
 	element.setAttribute("id",'page'+(index));
