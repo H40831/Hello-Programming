@@ -196,21 +196,24 @@
 	align-items: center;
 }
 
+
 .tutorial.card {
+	display: block;
 	box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 	transition: all 0.3s ease;
 	background-color: #fff;
-	width: 300px;
 	position: relative;
-	margin-right: 30px;
-	margin-bottom: 30px;
 	border-radius: 3px;
 	vertical-align: top;
 }
-.tutorial.card:first-of-type {
+#page6 .bottom .content {
+	width: 300px;
+	margin: 0 30px;
+}
+#page6 .bottom .content:first-of-type {
 	margin-left: auto;
 }
-.tutorial.card:last-of-type {
+#page6 .bottom .content:last-of-type {
 	margin-right: auto;
 }
 .tutorial.card:hover {
@@ -235,6 +238,7 @@
     font-size: 1.1rem;
     line-height: 28px;
     height: 80px;
+    text-align: left;
 }
 .tutorial .title {
 	width: 100%;
@@ -243,13 +247,38 @@
 	color: #8491a5;
 	margin-bottom: 12px;
 }
-
-#page6 .top a:link,
-#page6 .top a:visited {
-	text-decoration: underline;
+#page6 small {
+	display: block;
+	margin-top: 1em;
+	line-height: 1.2;
 }
 
 .practice .bottom p {
 	flex-basis: 100%;
 	text-align: center;
+}
+.practice .content {
+	flex-basis: calc(100% / 3 - 1em);
+}
+
+.practice-hint .bottom {
+	flex-wrap: nowrap;
+}
+.practice-hint .content {
+	flex-basis: calc(100% / 3);
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.practice-hint ul {
+	margin: 1em .5em 0 -.5em;
+	font-size: 13px;
+}
+.practice-hint li {
+	margin-bottom: .5em;
+}
+
+#page9 .bottom {
+	flex-wrap: nowrap;
 }
